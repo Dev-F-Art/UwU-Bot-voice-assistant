@@ -123,9 +123,9 @@ class UwU_GUI(wx.Frame):
         self.dialog_text.SetForegroundColour('#42F0F8')
         self.dialog_text.SetBackgroundColour('Black')
 
-        self.ava = wx.StaticBitmap( panelka, 1, wx.Bitmap(u'C:\\Users\\123\\Desktop\\UwU_protogen_assisteant\\UwU_image\\ava_funny.bmp'),size=(200, 200) )
+        self.ava = wx.StaticBitmap( panelka, 1, wx.Bitmap(u'C:ava_funny.bmp'),size=(200, 200) )
 
-        bmp = wx.Image('C:\\Users\\123\\Desktop\\UwU_protogen_assisteant\\UwU_image\\microphone_active.bmp', wx.BITMAP_TYPE_BMP).ConvertToBitmap()
+        bmp = wx.Image('microphone_active.bmp', wx.BITMAP_TYPE_BMP)
         
         btn_listen = wx.BitmapButton(panelka, -1, bmp)
         btn_listen.SetBackgroundColour('#474A51')
@@ -178,11 +178,11 @@ class UwU_GUI(wx.Frame):
         if m == 1:
             mood = mood + 1
             if mood > 98:
-                self.ava = wx.StaticBitmap( panelka, 1, wx.Bitmap(u'C:\\Users\\123\\Desktop\\UwU_protogen_assisteant\\UwU_image\\ava_funny.bmp'),size=(200, 200) )
+                self.ava = wx.StaticBitmap( panelka, 1, wx.Bitmap(u'ava_funny.bmp'),size=(200, 200) )
         if m == 2:
             mood = mood - 1
             if mood < 98:
-                self.ava = wx.StaticBitmap( panelka, 1, wx.Bitmap(u'C:\\Users\\123\\Desktop\\UwU_protogen_assisteant\\UwU_image\\ava_sad.bmp'),size=(200, 200) )
+                self.ava = wx.StaticBitmap( panelka, 1, wx.Bitmap(u'C:\\Users\\123\\Desktop\\ava_sad.bmp'),size=(200, 200) )
         
         message = Bot(question)
         print(message)
